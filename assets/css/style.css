@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box !important;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.contanier-fluid {
+    padding: 0 !important;
+}
+
+.animacion {
+    z-index: 1;
+    overflow: clip !important;
+}
+
+.animacion img {
+    animation: zoom-in-zoom-out 30s ease infinite;
+    box-sizing: border-box !important;
+    object-fit: cover !important;
+    position: center center !important;
+    overflow: clip;
+    height: 100vh;
+
+}
+
+.lamina {
+    z-index: 2;
+    background: rgba(18, 206, 243, 0.158);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
+    border: 1px solid rgba(0, 153, 255, 0.3);
+    flex-direction: column;
+    gap:20px;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+
+    50% {
+
+        transform: scale(1.5, 1.5);
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.cnt_caratula {
+    width: 180px;
+    height: 180px;
+    overflow: clip;
+    border-radius: 10px;
+    background: #331241;
+    box-shadow: -1px -2px 27px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px -2px 27px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -2px 27px -4px rgba(0, 0, 0, 0.75);
+}
+
+.ctn__player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn__player{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    font-size: 36pt;
+    color: rgb(255, 255, 255);
+    transition: 0.5;
+}
+
+.btn__player:hover{
+    opacity: 0.5;
+}
+
+.cnt__tema{
+    padding-top: 15px;
+    font-size: 14pt;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.redes ul {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0%;
+}
+
+.redes ul li a{
+    color: #1b057c !important;
+    text-decoration: none;
+    transition: 0.5;
+}
+
+.redes ul li a:hover{
+    opacity: 0.5;
+
+}
+
+.redes ul li a i{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #a00e74;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnt__logo{
+    top: 25px;
+    left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.cnt__logo img{
+    border-radius: 50%;
+}
+
+.cnt__logo span{
+    font-size: 16pt;
+}
+
+.footer{
+    bottom: 15px;
+}
+
+.btn__floating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+.btn__floating ul{
+    list-style: none;
+    padding: 0;
+}
+
+.btn__floating ul li:nth-child(1) a i{
+    background-color: rgb(192, 8, 146);
+}
+
+.btn__floating ul li:nth-child(2) a i{
+    background-color: #1b057c;
+}
+
+.btn__floating ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14pt;
+
+}
+
+.btn__floating ul li a i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido{
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cnt__info{
+    gap: 8px !important;
+}
+.cnt__info i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4a0069;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+}
+
+.msj{
+    padding: 15px 10px 15px 10px;
+}
+
+.cnt__fecha{
+    width: 100%;
+    text-align: right;
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.824);
+}
+
+@media screen and (max-width:964px) {
+    .cnt__logo{
+        justify-content: center;
+        left: 0;
+    }
+    
+}
+
+.btn-custom-purple {
+    background-color: #3900A3; /* Color de fondo inicial */
+    color: #fff; /* Color del texto inicial */
+  }
+
+  .btn-custom-purple:hover {
+    background-color: #1D0846; /* Color de fondo al pasar el ratón */
+  }
+
+  .custom-form-background {
+    background-color: #D40C88; /* Color de fondo para todo el formulario */
+    /* Agrega otros estilos según sea necesario */
+}

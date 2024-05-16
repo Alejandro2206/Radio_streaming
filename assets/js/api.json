@@ -1,0 +1,112 @@
+{
+    "station": {
+        "id": 1,
+        "name": "MOx Radio",
+        "shortcode": "mox_radio",
+        "description": "Radio Principal",
+        "frontend": "icecast",
+        "backend": "liquidsoap",
+        "listen_url": "https://moxstudio.live:8000/radio.mp3",
+        "url": "https://moxinnovations.com",
+        "public_player_url": "https://moxstudio.live/public/mox_radio",
+        "playlist_pls_url": "https://moxstudio.live/public/mox_radio/playlist.pls",
+        "playlist_m3u_url": "https://moxstudio.live/public/mox_radio/playlist.m3u",
+        "is_public": true,
+        "mounts": [
+            {
+                "id": 1,
+                "name": "/radio.mp3 (320kbps MP3)",
+                "url": "https://moxstudio.live:8000/radio.mp3",
+                "bitrate": 320,
+                "format": "mp3",
+                "listeners": {
+                    "total": 0,
+                    "unique": 0,
+                    "current": 0
+                },
+                "path": "/radio.mp3",
+                "is_default": true
+            }
+        ],
+        "remotes": [],
+        "hls_enabled": false,
+        "hls_url": null,
+        "hls_listeners": 0
+    },
+    "listeners": {
+        "total": 0,
+        "unique": 0,
+        "current": 0
+    },
+    "live": {
+        "is_live": false,
+        "streamer_name": "",
+        "broadcast_start": null,
+        "art": null
+    },
+    "now_playing": {
+        "sh_id": 687550,
+        "played_at": 1698370810,
+        "duration": 244,
+        "playlist": "musica",
+        "streamer": "",
+        "is_request": false,
+        "song": {
+            "id": "61435f4faeea47ed331a8674c8214a4c",
+            "text": "ABBA - Take A Chance On Me",
+            "artist": "ABBA",
+            "title": "Take A Chance On Me",
+            "album": "The Album",
+            "genre": "",
+            "isrc": "",
+            "lyrics": "",
+            "art": "https://moxstudio.live/api/station/1/art/5c6f75d3b40711a1767cce0e-1683310527.jpg",
+            "custom_fields": []
+        },
+        "elapsed": 72,
+        "remaining": 172
+    },
+    "playing_next": {
+        "cued_at": 1698370805,
+        "played_at": 1698371046,
+        "duration": 245,
+        "playlist": "musica",
+        "is_request": false,
+        "song": {
+            "id": "e17ebdf2d206bd3fb4c41413880389bb",
+            "text": "Diana Ross - Upside Down",
+            "artist": "Diana Ross",
+            "title": "Upside Down",
+            "album": "Diana",
+            "genre": "",
+            "isrc": "",
+            "lyrics": "",
+            "art": "https://moxstudio.live/api/station/1/art/e3b4359f52910d62e6c575e7-1683310570.jpg",
+            "custom_fields": []
+        }
+    },
+    "song_history": [
+        {
+            "sh_id": 687512,
+            "played_at": 1698370479,
+            "duration": 334,
+            "playlist": "musica",
+            "streamer": "",
+            "is_request": false,
+            "song": {
+                "id": "5953b30aeb7a1d366c53331c23435789",
+                "text": "Vicki Sue Robinson - Turn the Beat Around",
+                "artist": "Vicki Sue Robinson",
+                "title": "Turn the Beat Around",
+                "album": "Never Gonna Let You Go (Expanded Edition)",
+                "genre": "",
+                "isrc": "",
+                "lyrics": "",
+                "art": "https://moxstudio.live/api/station/1/art/f5ef5a57d99a4a6293851987-1683310569.jpg",
+                "custom_fields": []
+            }
+        }
+    ],
+    "is_online": true,
+    "cache": null
+}
